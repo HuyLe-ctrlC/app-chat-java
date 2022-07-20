@@ -157,30 +157,52 @@ export const ChatRoom = () => {
                     key={index}
                   >
                     {chat.senderName !== userData.username && (
-                      <div className="avatar">{chat.senderName}</div>
+                      <div className="avatar sm:w-24 md:w-24 lg:w-24">
+                        <div class="flex items-center space-x-4 ">
+                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                            <img
+                              class="w-8 h-8 rounded-full"
+                              src="https://robohash.org/99"
+                              alt="Neil image"
+                            />
+                          </div>
+                        </div>
+                        <p className="leading-loose">{chat.senderName}</p>
+                      </div>
                     )}
                     <div className="message-data">{chat.message}</div>
                     {chat.senderName === userData.username && (
-                      <div className="avatar self">{chat.senderName}</div>
+                      <div className="avatar self sm:w-24 md:w-24 lg:w-24">
+                        <div class="flex items-center space-x-4 ">
+                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                            <img
+                              class="w-8 h-8 rounded-full"
+                              src="https://robohash.org/16"
+                              alt="Neil image"
+                            />
+                          </div>
+                        </div>
+                        <p className="leading-loose">{chat.senderName}</p>
+                      </div>
                     )}
                   </li>
                 ))}
               </ul>
 
-              <div className="send-message">
+              <div className="send-message mt-2">
                 <input
                   type="text"
-                  className="input-message"
-                  placeholder="enter the message"
+                  className="rounded w-full border-4 border-sky-300 outline-sky-500"
+                  placeholder="Nhập nội dung chat ..."
                   value={userData.message}
                   onChange={handleMessage}
                 />
                 <button
                   type="button"
-                  className="send-button"
+                  className="bg-sky-600 hover:bg-sky-400 text-white font-bold py-2 px-4 border-sky-500 rounded ml-2 w-40"
                   onClick={sendValue}
                 >
-                  send
+                  Gửi
                 </button>
               </div>
             </div>
@@ -196,30 +218,52 @@ export const ChatRoom = () => {
                     key={index}
                   >
                     {chat.senderName !== userData.username && (
-                      <div className="avatar">{chat.senderName}</div>
+                      <div className="avatar sm:w-24 md:w-24 lg:w-24">
+                        <div class="flex items-center space-x-4 ">
+                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                            <img
+                              class="w-8 h-8 rounded-full"
+                              src="https://robohash.org/99"
+                              alt="Neil image"
+                            />
+                          </div>
+                        </div>
+                        <p className="leading-loose">{chat.senderName}</p>
+                      </div>
                     )}
                     <div className="message-data">{chat.message}</div>
                     {chat.senderName === userData.username && (
-                      <div className="avatar self">{chat.senderName}</div>
+                      <div className="avatar self sm:w-24 md:w-24 lg:w-24">
+                        <div class="flex items-center space-x-4 ">
+                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                            <img
+                              class="w-8 h-8 rounded-full"
+                              src="https://robohash.org/16"
+                              alt="Neil image"
+                            />
+                          </div>
+                        </div>
+                        <p className="leading-loose">{chat.senderName}</p>
+                      </div>
                     )}
                   </li>
                 ))}
               </ul>
 
-              <div className="send-message">
+              <div className="send-message mt-2">
                 <input
                   type="text"
-                  className="input-message"
-                  placeholder="enter the message"
+                  className="rounded w-full border-4 border-sky-300 outline-sky-500"
+                  placeholder="Nhập nội dung chat ..."
                   value={userData.message}
                   onChange={handleMessage}
                 />
                 <button
                   type="button"
-                  className="send-button"
+                  className="bg-sky-600 hover:bg-sky-400 text-white font-bold py-2 px-4 border-sky-500 rounded ml-2 w-40"
                   onClick={sendPrivateValue}
                 >
-                  send
+                  Gửi
                 </button>
               </div>
             </div>
@@ -229,15 +273,22 @@ export const ChatRoom = () => {
         <div className="register">
           <input
             id="user-name"
-            placeholder="Enter your name"
+            placeholder="Nhập vào tên của bạn"
             name="userName"
             value={userData.username}
             onChange={handleUsername}
             margin="normal"
+            className="border-4 border-cyan-500 focus:outline-0"
           />
-          <button type="button" onClick={registerUser}>
-            connect
+          <button
+            className="bg-cyan-600 hover:bg-cyan-400 text-white font-bold py-2 px-4 border-cyan-500 rounded ml-2 "
+            onClick={registerUser}
+          >
+            Button
           </button>
+          {/* <button type="button" onClick={registerUser}>
+            Vào room
+          </button> */}
         </div>
       )}
     </div>

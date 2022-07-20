@@ -23,6 +23,7 @@ button {
   color: #fff;
   font-size: 1.2em;
   font-weight: bold;
+  margin-left: 16px;
 }
 
 .container {
@@ -97,11 +98,11 @@ ul {
   box-shadow: 0 8px 8px -4px lightblue;
 }
 .member.active {
-  background: blueviolet;
+  background: #2be28f;
   color: #fff;
 }
 .member:hover {
-  background: grey;
+  background: #86dca8;
   color: #fff;
 }
 
@@ -110,6 +111,7 @@ ul {
   padding: 3px 5px;
   border-radius: 5px;
   color: #fff;
+  display: flex;
 }
 .avatar.self {
   color: #000;
