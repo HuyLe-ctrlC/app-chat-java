@@ -158,10 +158,10 @@ export const ChatRoom = () => {
                   >
                     {chat.senderName !== userData.username && (
                       <div className="avatar sm:w-24 md:w-24 lg:w-24">
-                        <div class="flex items-center space-x-4 ">
-                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                        <div className="flex items-center space-x-4 ">
+                          <div className="flex-shrink-0 sm:w-11 md:w-8">
                             <img
-                              class="w-8 h-8 rounded-full"
+                              className="w-8 h-8 rounded-full"
                               src="https://robohash.org/99"
                               alt="Neil image"
                             />
@@ -173,10 +173,10 @@ export const ChatRoom = () => {
                     <div className="message-data">{chat.message}</div>
                     {chat.senderName === userData.username && (
                       <div className="avatar self sm:w-24 md:w-24 lg:w-24">
-                        <div class="flex items-center space-x-4 ">
-                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                        <div className="flex items-center space-x-4 ">
+                          <div className="flex-shrink-0 sm:w-11 md:w-8">
                             <img
-                              class="w-8 h-8 rounded-full"
+                              className="w-8 h-8 rounded-full"
                               src="https://robohash.org/16"
                               alt="Neil image"
                             />
@@ -219,10 +219,10 @@ export const ChatRoom = () => {
                   >
                     {chat.senderName !== userData.username && (
                       <div className="avatar sm:w-24 md:w-24 lg:w-24">
-                        <div class="flex items-center space-x-4 ">
-                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                        <div className="flex items-center space-x-4 ">
+                          <div className="flex-shrink-0 sm:w-11 md:w-8">
                             <img
-                              class="w-8 h-8 rounded-full"
+                              className="w-8 h-8 rounded-full"
                               src="https://robohash.org/99"
                               alt="Neil image"
                             />
@@ -234,10 +234,10 @@ export const ChatRoom = () => {
                     <div className="message-data">{chat.message}</div>
                     {chat.senderName === userData.username && (
                       <div className="avatar self sm:w-24 md:w-24 lg:w-24">
-                        <div class="flex items-center space-x-4 ">
-                          <div class="flex-shrink-0 sm:w-11 md:w-8">
+                        <div className="flex items-center space-x-4 ">
+                          <div className="flex-shrink-0 sm:w-11 md:w-8">
                             <img
-                              class="w-8 h-8 rounded-full"
+                              className="w-8 h-8 rounded-full"
                               src="https://robohash.org/16"
                               alt="Neil image"
                             />
